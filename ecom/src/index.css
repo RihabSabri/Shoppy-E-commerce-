@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;1,200&family=Playfair+Display:wght@400;500&family=Raleway:wght@100&display=swap");
+/* =================VARIBALES=============*/
+:root {
+  --drk-black: #000000;
+  --drk-grey-1: #1f1e1e;
+  --drk-grey-2: #413f3f;
+  --drk-grey-3: #696868;
+  --light-grey-1: #c4c4c4;
+  --light-grey-2: #e5e5e5;
+  --light-grey-3: #faf4f4;
+  --yel: #ebc814;
+  --yel-2: #ffd500;
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --max-width: 1170px;
+  --fixed-width: 620px;
+}
+
+/* =================GLOBALS================*/
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Playfair Display", "Raleway", "Nunito", serif;
+}
+
+button {
+  font-family: "Playfair Display", "Raleway", "Nunito", serif;
+}
+ul {
+  list-style: none;
+}
+li {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}

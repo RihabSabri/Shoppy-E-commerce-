@@ -1,0 +1,157 @@
+.Cart-item-container {
+  padding: 0;
+  margin: 0;
+  display: relative;
+}
+.cart-item-container-top {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+}
+.title-bag {
+  position: absolute;
+  left: 45%;
+}
+
+.items-inside-bag {
+  width: 100%;
+  margin-bottom: 5px;
+}
+.container-bag {
+  display: flex;
+  padding: 0 2rem;
+}
+.left-bag {
+  position: relative;
+  margin-right: 20px;
+  padding: 1rem;
+  display: flex;
+  flex: 2;
+  height: max-content;
+  box-shadow: var(--light-shadow);
+}
+.right-bag {
+  padding: 1rem;
+  margin-left: 20px;
+  height: max-content;
+  border: 1px solid var(--light-grey-2);
+}
+
+.first-part {
+  width: 20%;
+  object-fit: cover;
+}
+
+.second-part {
+  flex: 2;
+  padding: 20px;
+}
+
+.second-part-1,
+.second-part-2 {
+  display: flex;
+  margin-bottom: 2rem;
+}
+.bag-product-title {
+  margin-left: 10px;
+  letter-spacing: var(--spacing);
+  font-size: 14px;
+  font-weight: lighter;
+}
+.thrid-part {
+  flex: 1;
+  padding: 20px;
+}
+
+.bag-price {
+  padding-top: 3.5rem;
+  margin: 0 10px;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.elements-summary {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-check {
+  border: none;
+  padding: 10px;
+  width: 100%;
+  color: var(--light-grey-2);
+  background-color: var(--drk-black);
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: var(--spacing);
+}
+
+.btn-check:hover {
+  background-color: var(--drk-grey-1);
+}
+.remove-from-cart {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  transition: var(--transition);
+  color: var(--drk-grey-1);
+}
+
+.remove-from-cart:hover {
+  transform: scale(1.2);
+}
+
+/* ======================= MEDIA QUERIES ==================================*/
+
+@media screen and (max-width: 1000px) {
+  .items-inside-bag {
+    width: 100%;
+  }
+
+  .left-bag {
+    width: fit-content;
+
+    margin-right: 0;
+  }
+  .container-bag {
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .items-inside-bag {
+    width: 100%;
+  }
+  .title-bag {
+    position: absolute;
+    left: 35%;
+    top: 142.5px;
+  }
+
+  .container-bag {
+    flex-direction: column;
+  }
+  .items-inside-bag {
+    margin-bottom: 20px;
+  }
+  .left-bag {
+    width: fit-content;
+    flex-direction: column;
+    margin-right: 0;
+  }
+  .right-bag {
+    margin-right: 0;
+    margin-left: 0px;
+  }
+
+  .first-part {
+    width: 100%;
+  }
+  .bck-btn-text {
+    display: none;
+  }
+}

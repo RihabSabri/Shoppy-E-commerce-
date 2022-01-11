@@ -1,0 +1,14 @@
+.categories-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+}
+
+/* ======================== MEDIA QUERIES =======================*/
+
+@media screen and (max-width: 500px) {
+  .categories-container {
+    flex-direction: column;
+    padding: 0;
+  }
+}

@@ -1,0 +1,82 @@
+.nav-container {
+  height: 60px;
+}
+
+.nav-center {
+  background-color: rgb(255, 255, 255);
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.nav-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-logout {
+  padding: 0.5rem;
+  margin-right: 10px;
+  text-transform: uppercase;
+  border: none;
+  color: white;
+  background-color: var(--yel);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-logout:hover {
+  background-color: var(--yel-2);
+}
+
+.nav-left {
+  flex: 1;
+}
+
+.logo {
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--yel);
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.nav-links {
+  margin: 0 1rem;
+  color: var(--drk-grey-1);
+  letter-spacing: var(--spacing);
+  transition: var(--transition);
+}
+
+.nav-links:hover {
+  color: var(--drk-grey-3);
+}
+
+/* ======================== MEDIA QUERIES =======================*/
+
+@media screen and (max-width: 580px) {
+  .logo {
+    font-size: 1.5rem;
+    padding-top: 0.6rem;
+  }
+
+  .nav-links {
+    font-size: 14px;
+    margin: 0 0.5rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .logo {
+    font-size: 1rem;
+    padding-top: 1.25rem;
+  }
+
+  .nav-links {
+    font-size: 12px;
+    margin: 0 0.5rem;
+  }
+}

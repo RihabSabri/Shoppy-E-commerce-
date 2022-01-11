@@ -1,0 +1,35 @@
+.load-container {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-5 {
+  padding: 10px;
+  width: 30vw;
+  border: 1px solid var(--drk-grey-1);
+  background-color: transparent;
+  color: var(--drk-grey-1);
+  text-transform: uppercase;
+  font-size: 20px;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.btn-5:hover {
+  transform: scale(1.1);
+}
+
+/* ======================== MEDIA QUERIES =======================*/
+
+@media screen and (max-width: 380px) {
+  .load-container {
+    padding: 20px;
+  }
+
+  .btn-5 {
+    width: 80vw;
+    font-size: 18px;
+  }
+}

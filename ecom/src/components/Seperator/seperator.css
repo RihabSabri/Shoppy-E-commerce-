@@ -1,0 +1,30 @@
+p {
+  font-size: 25px;
+  position: relative;
+  color: var(--drk-grey-3);
+  text-align: center;
+  overflow: hidden;
+  text-transform: uppercase;
+  letter-spacing: var(--spacing);
+}
+
+.hr2:before,
+.hr2:after {
+  background-color: var(--light-grey-2);
+  content: "";
+  display: inline-block;
+  height: 1px;
+  vertical-align: middle;
+  width: 50%;
+}
+.hr2:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+.hr2:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+.seperator-container {
+  padding: 30px;
+}

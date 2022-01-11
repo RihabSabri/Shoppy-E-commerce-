@@ -1,0 +1,137 @@
+.footer-container {
+  display: flex;
+  background-color: var(--drk-black);
+  z-index: 2;
+  position: relative;
+  /*position: sticky;
+  top: auto;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;*/
+}
+
+.left-footer {
+  flex: 1;
+  padding: 30px;
+  border-right: 1px solid var(--drk-grey-2);
+}
+.right-footer {
+  padding: 30px;
+  flex: 1;
+  text-align: justify;
+}
+
+.center-footer {
+  padding: 30px;
+  flex: 1;
+  text-align: justify;
+}
+.footer-description {
+  font-size: 12px;
+  text-transform: none;
+  text-align: justify;
+  line-height: 1.5rem;
+  color: var(--light-grey-2);
+  margin-top: 20px;
+}
+
+.icons-footer {
+  margin: 20px 0;
+  padding: 20x;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  color: var(--light-grey-2);
+}
+
+.fb-icon,
+.git-icon,
+.lnk-icon {
+  transition: var(--transition);
+}
+.fb-icon:hover,
+.git-icon:hover,
+.lnk-icon:hover {
+  transform: scale(1.2);
+  color: var(--drk-grey-2);
+}
+
+.title-center {
+  margin: 20px 0;
+  color: var(--light-grey-2);
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: var(--spacing);
+  font-weight: lighter;
+  display: inline-block;
+}
+
+.title-center::after {
+  display: block;
+  content: "";
+  border-bottom: 1px solid var(--light-grey-2);
+}
+
+.list-center {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list-center-item,
+.list-right-item {
+  line-height: 1.75rem;
+  width: 50%;
+}
+
+.list-right-item {
+  display: flex;
+
+  align-items: center;
+}
+.list-center-link,
+.list-right-link {
+  color: var(--light-grey-2);
+  transition: var(--transition);
+  letter-spacing: var(--spacing);
+  font-size: 12px;
+  display: inline-block;
+}
+
+.list-center-link:hover,
+.list-right-link:hover {
+  color: var(--drk-grey-2);
+}
+
+.right-icon {
+  color: var(--light-grey-2);
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.pay-image {
+  width: 50%;
+  margin-top: 20px;
+}
+
+/* ======================== MEDIA QUERIES =======================*/
+
+@media screen and (max-width: 500px) {
+  .center-footer {
+    display: none;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .left-footer {
+    border-bottom: 1px solid var(--drk-grey-2);
+  }
+  .pay-image {
+    width: 70%;
+    padding: 10px 0px;
+  }
+}

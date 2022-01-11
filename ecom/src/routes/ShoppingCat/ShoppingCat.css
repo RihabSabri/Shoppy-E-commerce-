@@ -1,0 +1,22 @@
+.shopCat-conatiner {
+  display: flex;
+  min-height: 800px;
+}
+
+.sider-space {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  flex: 1;
+}
+
+.rest-page-container {
+  flex: 4;
+  margin-right: 2rem;
+}
+
+@media screen and (max-width: 500px) {
+  .sider-space {
+    display: none;
+  }
+}

@@ -1,0 +1,23 @@
+.anouncement-container {
+  height: 45px;
+  color: var(--light-grey-2);
+  background-color: var(--drk-black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: var(--spacing);
+  font-weight: bolder;
+}
+/* ======================== MEDIA QUERIES =======================*/
+
+@media screen and (max-width: 580px) {
+  .anouncement-container {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .anouncement-container {
+    font-size: 10px;
+  }
+}
