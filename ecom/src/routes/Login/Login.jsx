@@ -21,7 +21,7 @@ const Login = () => {
             <div className="register-logo">
                   <h2 className='logo register-logo-logo'>SHOPPY</h2> 
                </div>
-            <h2 className='create-account'>Create An account</h2>
+            <h2 className='create-account'>Log In </h2>
             <form action="post" className="form-register">
                 <label className='label'>
                    Email
