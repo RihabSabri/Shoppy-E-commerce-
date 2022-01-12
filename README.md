@@ -19,5 +19,9 @@
 </ul>
 
 
+### Video Demo 
+<p> Quick Video Demo of the website</p>
+
+https://user-images.githubusercontent.com/96342556/149042776-ed918313-6540-46e4-a2f1-a800c26e8992.mp4
 
 
